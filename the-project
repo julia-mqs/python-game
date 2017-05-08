@@ -1,0 +1,23 @@
+# python-game
+Just a simple "rock, paper, scissors" game, made in portuguese.
+import random
+print("Vamos jogar Pedra, Papel e Tesoura!")
+player=(input("Digite sua escolha: "))
+c=("pedra", "papel", "tesoura")
+pc=random.choice(c)
+print("O PC escolheu",pc)
+if (player==pc):
+    print ("Deu um empate...")
+else:
+    if (player=="tesoura" and pc=="papel"):
+        print("VocÃª venceu!")
+    else:
+        if (player=="pedra" and pc=="tesoura"):
+            print("VocÃª venceu!")
+        else:
+            if (player=="papel" and pc=="pedra"):
+                print("VocÃª venceu!")
+            else:
+                print("O PC venceu...")
+
+input("Clique Enter para sair.")
